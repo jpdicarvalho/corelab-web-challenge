@@ -1,0 +1,30 @@
+.container__main{
+  background: #D9D9D9;
+}
+
+.section__header{
+  display: flex;
+  background: #ffffff;
+  width: 100%;
+  height: 58px;
+  padding: 12px 0px 5px 35px;
+}
+.box__img{
+  width: 36px;
+  height: 36px;
+}
+.logo{
+  width: 100%;
+  height: 100%;
+}
+.box__name__web__application{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+}
+.name__web__application{
+  color: #455A64;
+  font-weight: 400;
+  font-size: 14px;
+}
