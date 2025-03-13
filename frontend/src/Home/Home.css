@@ -1,6 +1,5 @@
 .container__main{
   background: #D9D9D9;
-  height: 100dvh;
 }
 .center{
   display: flex;
@@ -121,6 +120,7 @@
   width: 100%; 
   border-radius: 8px;
   padding-left: 35px;
+  margin-bottom: 15px;
   overflow-x: auto; 
   overflow-y: hidden; 
   white-space: nowrap;
@@ -138,19 +138,20 @@
   color: #464646;
   margin-bottom: 5px;
 }
-.box__card__favorited {
+.box__note__card {
   display: flex;
   flex-wrap: nowrap; 
   gap: 12px;
 }
-.inner__card__favorited {
+.inner__note__card {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
   width: 380px; 
   height: 470px; 
   background: white;
   border-radius: 25px;
+  padding: 10px 10px 10px 10px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   white-space: normal;
+  overflow: hidden;
 }

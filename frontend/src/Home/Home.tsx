@@ -74,17 +74,33 @@ export default function Home() {
       <p className="tittle__section__favorite__to_do">Favoritas</p>
 
       <div className="section__favorite__to_do">        
-        <div className="box__card__favorited">
-          <div className="inner__card__favorited">Note 1</div>
-          <div className="inner__card__favorited">Note 2</div>
-          <div className="inner__card__favorited">Note 3</div>
-          <div className="inner__card__favorited">Note 4</div>
-          <div className="inner__card__favorited">Note 5</div>
-          <div className="inner__card__favorited">Note 6</div>
-          <div className="inner__card__favorited">Note 7</div>
+        <div className="box__note__card">
+          <div className="inner__note__card">
+
+            <div className='header__create__note center'>
+              <input
+                type="text"
+                className='input__add__tittle'
+                name="tittle__card__created"
+                id="tittle__card__created"
+                placeholder='Título'
+              />
+              {isNoteFavorited ? (
+                <GoStarFill
+                  className='icon__star__favorited'
+                />
+              ):(
+                <GoStar
+                  className='icon__star__no__favorited'
+                />
+              )}
+            </div>
+            
+          </div>
         </div>
       </div>
 
+      <p className="tittle__section__favorite__to_do">Outras</p>
       <div className="section__another__to_do">another to_do</div>
     </div>
   );
