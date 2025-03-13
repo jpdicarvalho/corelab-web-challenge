@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import './Home.css'
 
 import Logo from '../images/image_logo.png'
@@ -5,7 +7,8 @@ import Logo from '../images/image_logo.png'
 import { IoMdClose } from "react-icons/io";
 import { GoStar } from "react-icons/go";
 import { GoStarFill } from "react-icons/go";
-import { useState } from 'react';
+import { MdOutlineEdit } from "react-icons/md";
+import { RiPaintFill } from "react-icons/ri";
 
 export default function Home() {
   const [isNoteFavorited, setIsNoteFavorited] = useState(false);
@@ -96,6 +99,17 @@ export default function Home() {
               )}
             </div>
             
+            <div className="inner__content__note">
+              container text note
+            </div>
+
+            <div className="footer__note">
+              <div className='box__edit__note'>
+                <MdOutlineEdit className='icon__edit__note'/>
+                <RiPaintFill className='icon__edit__note'/>
+              </div>
+              <IoMdClose className='icon__delete__note'/>
+            </div>
           </div>
         </div>
       </div>
@@ -122,7 +136,6 @@ export default function Home() {
               />
             )}
           </div>
-
         </div>
       </div>
     </div>
