@@ -34,8 +34,10 @@ export default function Home() {
         </div>
 
       </div>
+
       <div className="section__create__note center">
         <div className='card__create__note'>
+
           <div className='header__create__note center'>
             <input
               type="text"
@@ -57,10 +59,32 @@ export default function Home() {
               />
             )}
           </div>
-    
+
+          <div className="box__note__content">
+            <textarea
+              className="textarea__note"
+              name="note"
+              id="note"
+              placeholder="Criar nota..."
+            > </textarea>
+          </div>
         </div>
       </div>
-      <div className="section__favorite__to_do">favorite to-do</div>
+
+      <p className="tittle__section__favorite__to_do">Favoritas</p>
+
+      <div className="section__favorite__to_do">        
+        <div className="box__card__favorited">
+          <div className="inner__card__favorited">Note 1</div>
+          <div className="inner__card__favorited">Note 2</div>
+          <div className="inner__card__favorited">Note 3</div>
+          <div className="inner__card__favorited">Note 4</div>
+          <div className="inner__card__favorited">Note 5</div>
+          <div className="inner__card__favorited">Note 6</div>
+          <div className="inner__card__favorited">Note 7</div>
+        </div>
+      </div>
+
       <div className="section__another__to_do">another to_do</div>
     </div>
   );

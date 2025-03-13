@@ -1,12 +1,12 @@
 .container__main{
   background: #D9D9D9;
+  height: 100dvh;
 }
 .center{
   display: flex;
   justify-content: center;
   align-items: center;
 }
-/*Section header aplication*/
 .section__header{
   display: flex;
   justify-content: space-between;
@@ -16,7 +16,6 @@
   padding: 12px 0px 5px 35px;
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.062);
 }
-/*box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);*/
 .box__img__name__input{
   display: flex;
   width: 100%;
@@ -64,16 +63,16 @@
 /*Section add a new note*/
 .section__create__note{
   margin-top: 30px;
+  margin-bottom: 50px;
 }
 .card__create__note{
   width: 530px;
-  height: 105px;
-  background: #fff;
 }
 .header__create__note{
-  display: flex;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.38);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.251);
   padding-right: 10px;
+  background: #fff;
+  width: 100%;
 }
 .input__add__tittle{
   border: none;
@@ -88,12 +87,70 @@
   font-weight: bold;
 }
 .icon__star__no__favorited{
-  font-size: 25px;
+  font-size: 20px;
   color: #455A64;
   cursor: pointer;
 }
 .icon__star__favorited{
-  font-size: 25px;
+  font-size: 20px;
   color: gold;
   cursor: pointer;
+}
+.box__note__content{
+  width: 100%;
+  height: 100%;
+}
+.textarea__note {
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  font-size: 14px;
+  color: #333333;
+  border: none;
+  resize: none;
+  outline: none;
+}
+.textarea__note::placeholder {
+  color: gray;
+  width: 400;
+}
+.section__favorite__to_do {
+  display: flex;
+  align-items: center;
+  height: 490px; 
+  width: 100%; 
+  border-radius: 8px;
+  padding-left: 35px;
+  overflow-x: auto; 
+  overflow-y: hidden; 
+  white-space: nowrap;
+}
+.section__favorite__to_do::-webkit-scrollbar {
+  height: 3px; 
+}
+.section__favorite__to_do::-webkit-scrollbar-thumb {
+  background: #455A64; 
+  border-radius: 5px;
+}
+.tittle__section__favorite__to_do {
+  font-size: 14px;
+  padding-left: 35px;
+  color: #464646;
+  margin-bottom: 5px;
+}
+.box__card__favorited {
+  display: flex;
+  flex-wrap: nowrap; 
+  gap: 12px;
+}
+.inner__card__favorited {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 380px; 
+  height: 470px; 
+  background: white;
+  border-radius: 25px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  white-space: normal;
 }
