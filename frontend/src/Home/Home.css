@@ -155,3 +155,9 @@
   white-space: normal;
   overflow: hidden;
 }
+.section__another__to_do{
+  width: 100%; 
+  padding-left: 35px;
+  padding-bottom: 15px;
+
+}
