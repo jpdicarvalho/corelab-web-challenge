@@ -3,8 +3,8 @@ import './Home.css'
 import Logo from '../images/image_logo.png'
 
 import { IoMdClose } from "react-icons/io";
-import { IoIosStarOutline } from "react-icons/io";
-import { IoMdStar } from "react-icons/io";
+import { GoStar } from "react-icons/go";
+import { GoStarFill } from "react-icons/go";
 import { useState } from 'react';
 
 export default function Home() {
@@ -46,12 +46,12 @@ export default function Home() {
             />
 
             {isNoteFavorited ? (
-              <IoMdStar
+              <GoStarFill
                 className='icon__star__favorited'
                 onClick={()=> {setIsNoteFavorited(false)}}
               />
             ):(
-              <IoIosStarOutline
+              <GoStar
                 className='icon__star__no__favorited'
                 onClick={()=> {setIsNoteFavorited(true)}}
               />
