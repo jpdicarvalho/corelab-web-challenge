@@ -3,8 +3,13 @@ import './Home.css'
 import Logo from '../images/image_logo.png'
 
 import { IoMdClose } from "react-icons/io";
+import { IoIosStarOutline } from "react-icons/io";
+import { IoMdStar } from "react-icons/io";
+import { useState } from 'react';
 
 export default function Home() {
+  const [isNoteFavorited, setIsNoteFavorited] = useState(false);
+
   return (
     <div className="container__main">
       <div className="section__header">
@@ -28,6 +33,32 @@ export default function Home() {
           <IoMdClose className='icon__close'/>
         </div>
 
+      </div>
+      <div className="section__create__note center">
+        <div className='card__create__note'>
+          <div className='header__create__note center'>
+            <input
+              type="text"
+              className='input__add__tittle'
+              name="tittle"
+              id="tittle"
+              placeholder='Título'
+            />
+
+            {isNoteFavorited ? (
+              <IoMdStar
+                className='icon__star__favorited'
+                onClick={()=> {setIsNoteFavorited(false)}}
+              />
+            ):(
+              <IoIosStarOutline
+                className='icon__star__no__favorited'
+                onClick={()=> {setIsNoteFavorited(true)}}
+              />
+            )}
+          </div>
+    
+        </div>
       </div>
       <div className="section__favorite__to_do">favorite to-do</div>
       <div className="section__another__to_do">another to_do</div>
